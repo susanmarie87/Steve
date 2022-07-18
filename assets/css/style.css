@@ -32,6 +32,13 @@ body {
     opacity: 0.25;
 }
 
+a {
+    position: relative;
+    color: #fff;
+    padding-right: 5%;
+    padding-top: 1%;
+}
+
 .content {
     position: relative;
     max-width: 750px;
@@ -89,6 +96,7 @@ header .toggle {
     background: #162c3b;
     width: 50%;
     padding: 100px;
+    flex: auto;
 }
 
 h2.heading {
@@ -104,14 +112,23 @@ p.text {
     font-size: 16px;
     font-weight: 300;
     letter-spacing: 1px;
+    margin-bottom: 15px;
+
 }
 
 .about .imgBx {
     background: url(/assets/images/steve.png);
-    background-size: 65%;
-    background-position: center;
+    background-size: cover;
     width: 50%;
-    margin-top: .5%;
+    height: auto;
+    position: relative;
+}
+
+@media (min-width: 1200px) and (max-width : 1900px) {
+    .div .imgBx {
+        height: auto;
+        max-width: 100%;
+    }
 }
 
 .services {
@@ -127,6 +144,7 @@ p.text {
     align-items: center;
     flex-wrap: wrap;
     margin-top: 60px;
+    padding-bottom: 20px;
 }
 
 .services .container .serviceBx {
@@ -239,14 +257,30 @@ p.text {
 }
 
 .imgBx2 {
-    background: url(bg2.jpg);
+    background: url(/assets/images/contact.png);
     background-size: cover;
     width: 50%;
+    position: relative;
+}
+
+@media only screen and (min-width: 660px) {
+    imgBx2 {
+        width: 20%;
+    }
 }
 
 .redbg {
     background: url(red.jpg) !important;
     background-size: cover;
+}
+
+@media only screen and (max-width: 990px) {
+    .redbg {
+        background-size: 20%;
+    }
+}
+
+background-size:;
 }
 
 .form .inputBx {
