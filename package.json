@@ -1,4 +1,5 @@
 {
+  "homepage": "https://susanmarie87/github.io/Steve",
   "dependencies": {
     "bootstrap": "^5.1.3",
     "gh-pages": "^4.0.0"
@@ -17,7 +18,6 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "homepage": "https://susanmarie87.github.io/Steve"
   "bugs": {
     "url": "https://github.com/susanmarie87/Steve/issues"
   },
